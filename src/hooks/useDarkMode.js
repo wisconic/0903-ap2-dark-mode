@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import useLocalStorage from './useLocalStorage';
+import {useLocalStorage} from './useLocalStorage';
 
-export const useForm = (key, initialValue) => {
+export const useDarkMode = (key, initialValue) => {
   // capture useLocalStorage return values in a const
   const [darkMode, setDarkMode] = useLocalStorage('dark-mode', false);
 
